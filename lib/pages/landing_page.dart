@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'login_page.dart';
 import '../components/clipper.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -28,15 +29,13 @@ class _LandingPageState extends State<LandingPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Fix My Street',
-                    style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Poppins',
-                        color: Color(0xFF488B8F)
-                      ),
-                  ),
+                  Text('To Do List',
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 34,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF488B8F)),
+                      )),
                 ],
               ),
               SizedBox(
@@ -71,13 +70,13 @@ class _LandingPageState extends State<LandingPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text(
-                            'Sign Up',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 16,
-                                color: Color(0xFF488B8F)),
-                          )
+                          Text('Sign Up',
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16,
+                                    color: Color(0xFF488B8F)),
+                              ))
                         ],
                       ),
                     ),
@@ -109,13 +108,13 @@ class _LandingPageState extends State<LandingPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text(
-                            'Log In',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 16,
-                                color: Color(0xFFFFFFFF)),
-                          )
+                          Text('Log In',
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16,
+                                    color: Color(0xFFFFFFFF)),
+                              ))
                         ],
                       ),
                     ),
@@ -123,7 +122,7 @@ class _LandingPageState extends State<LandingPage> {
                 ],
               ),
               SizedBox(
-                height: 136,
+                height: 40,
               ),
               ClipPath(
                 clipper: CircleBottomClipper(),
