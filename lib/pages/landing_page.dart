@@ -39,51 +39,6 @@ class _LandingPageState extends State<LandingPage> {
                 ],
               ),
               SizedBox(
-                height: 104,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
-                    },
-                    child: Container(
-                      width: 327,
-                      height: 60,
-                      padding: EdgeInsets.all(10),
-                      clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFFFFFFF),
-                        borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: Color(0xFFADD2C9)),
-                        boxShadow: [
-                          BoxShadow(
-                            blurRadius: 10,
-                            offset: Offset(0, 2),
-                            color: Colors.black.withAlpha(90),
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text('Sign Up',
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontWeight: FontWeight.w700,
-                                    fontSize: 16,
-                                    color: Color(0xFF488B8F)),
-                              ))
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
                 height: 20,
               ),
               Row(
@@ -108,7 +63,7 @@ class _LandingPageState extends State<LandingPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text('Log In',
+                          Text('Activities',
                               style: GoogleFonts.poppins(
                                 textStyle: TextStyle(
                                     fontWeight: FontWeight.w700,
@@ -122,7 +77,7 @@ class _LandingPageState extends State<LandingPage> {
                 ],
               ),
               SizedBox(
-                height: 40,
+                height: 50,
               ),
               ClipPath(
                 clipper: CircleBottomClipper(),
