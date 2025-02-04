@@ -27,6 +27,9 @@ class _LoginPageState extends State<LoginPage> {
                     color: Color(0xFF488B8F),
                   ),
                 ),
+                SizedBox(
+                  height: 50,
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: Column(
