@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
+import 'home_page.dart';
 import '../components/clipper.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -47,7 +47,7 @@ class _LandingPageState extends State<LandingPage> {
                   GestureDetector(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
+                          MaterialPageRoute(builder: (context) => HomePage()));
                     },
                     child: Container(
                       width: 327,
